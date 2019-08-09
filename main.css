@@ -17,46 +17,66 @@ body {
 .nav_bar {
     background-color: #538cc6;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     margin: 1rem;
     border: .2rem solid #538cc6;
     border-radius: 5px;
 }
-.nav_bar ul {
+.nav_title {
+    justify-content: left;
+}
+.nav_title h4 {
+    color: #0d1a26;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 10px 0 0 5px;
+    margin-top: 10px;
+}
+.nav_links ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
 }
-.nav_bar li {
-    list-style-type: none;
+.nav_links li {
+    list-style: none;
 }
-.nav_bar a {
+.nav_link a {
     padding: 0 1rem 0 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #0d1a26;
+}
+.nav_link a:hover {
+    text-decoration: underline;
 }
 /* End of Nav Bar */
 /* About Content */
 .content_about {
     background-color: #538cc6;
     display: flex;
-    justify-content: right;
+    height: 100%;
     margin: 1rem;
     border: .2rem solid #538cc6;
     border-radius: 5px;
     padding: 2rem;
 }
 .about_img {
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     padding-right: .5rem;
 }
 .about_wrapper {
     padding-left: 1rem;
+    flex-wrap: wrap;
 }
 .content_about_header {
     font-size: 1.5rem;
+
 }
 .content_about_paragraph {
     font-size: 1rem;
+
 }
 /* End of About Content */
 /* Blog Section */
@@ -64,6 +84,7 @@ body {
     background-color: #538cc6;
     display: flex;
     justify-content: right;
+    flex-wrap: wrap;
     margin: 1rem;
     border: .2rem solid #538cc6;
     border-radius: 5px;
@@ -72,13 +93,54 @@ body {
 .blog_wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 .content_blog_header {
     font-size: 1.5rem;
+    margin: 0;
 }
 .content_blog_paragraph {
     font-size: 1rem;
 
 }
 /* End Of Blog Section */
+/* Contact Section */
+.content_contact {
+    margin: 0 2rem 2rem 2rem;
+}
+.contact_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.contact_img1 {
+    width: 150%;
+    height: 150%;
+    opacity: .5;
+}
+.contact_img2 {
+    width: 170%;
+    height: 150%;
+    opacity: .5;
+}
+.contact_img1:hover {
+    opacity: 1;
+}
+.contact_img2:hover {
+    opacity: 1;
+}
+/* End of Contact Section */
+/* Footer */
+.footer {
+    background-color: #538cc6;
+    display: flex;
+    justify-content: right;
+    margin: 1rem;
+    border: .2rem solid #538cc6;
+    border-radius: 5px;
+}
+.footer h4 {
+    padding: 0 1rem 0 0;
+    font-size: .8rem;
+}
+/* End of Footer */
