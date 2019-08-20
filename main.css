@@ -68,12 +68,12 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    margin: 0 2rem 0 0;
+    margin: 0 2rem .5rem 0;
 }
 .about_img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 .about_wrapper {
     padding-left: 1rem;
@@ -182,6 +182,8 @@ body {
         justify-content: center;
         flex-wrap: wrap;
     }
+    .nav_bar ul {padding: 0;}
+    
     .nav_title h3 {
         font-size: 1rem;
         margin: .5rem 0 0 0;
