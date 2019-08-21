@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap');
 
 html {
-font-size: 62.5;
+    font-size: 62.5%;
 }
 
 body {
@@ -12,7 +12,8 @@ body {
 }
 .wrapper {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin: 0 4rem 0 4rem;
 }
 
 /* Nav Bar */
@@ -28,31 +29,35 @@ body {
     justify-content: left;
 }
 .nav_title h3 {
-    color: #413E3E;
-    font-size: 2rem;
+    color: #292727;
+    font-size: 3.5rem;
     margin: 0 0 0 1rem;
 }
 .nav_title h4 {
-    color: #413E3E;
-    font-size: 1.2rem;
+    color: #292727;
+    font-size: 2.5rem;
     margin: 0 0 0 1rem;
 }
+
 .nav_links ul {
     list-style: none;
     display: flex;
     justify-content: right;
+    margin: 1.5rem auto;
 }
 .nav_links li {
     list-style: none;
 }
 .nav_link a {
     padding: 0 1rem 0 1rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     text-decoration: none;
-    color: #413E3E;
+    color: #292727;
 }
 .nav_link a:hover {
-    text-decoration: underline;
+    opacity: 0.7;
+    cursor: pointer;
 }
 /* End of Nav Bar */
 /* About Content */
@@ -65,10 +70,10 @@ body {
     padding: 2rem;
 }
 .about_img_wrapper {
-    width: 15rem;
-    height: 15rem;
+    width: 30rem;
+    height: 30rem;
     float: left;
-    margin: 0 2rem .5rem 0;
+    margin: 0 2rem 1rem 0;
 }
 .about_img {
     width: 100%;
@@ -80,14 +85,12 @@ body {
     flex-wrap: wrap;
 }
 .content_about_header {
-    font-size: 1.5rem;
-    color: #413E3E;
-
+    font-size: 3rem;
+    color: #292727;
 }
 .content_about_paragraph {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #413E3E;
+    font-size: 2.5rem;
+    color: #292727;
 
 }
 /* End of About Content */
@@ -125,91 +128,116 @@ body {
     display: flex;
     justify-content: right;
     margin: 1rem;
+    margin-bottom: 2rem;
     padding: 0;
     border: .2rem solid #6B97C1;
     border-radius: 20px;
 }
 .footer h4 {
-    font-size: 1rem;
-    color: #413E3E;
+    font-size: 2rem;
+    color: #292727;
     margin: 0 1rem 0 0;
 
 }
 /* End of Footer */
 /* Media Query's */
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        margin: 0 2rem 0 2rem;
+    }
+    
     .nav_title h3 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin: .5rem 0 0 1rem;
     }
     .nav_title h4 {
-        font-size: 1rem;
+        font-size: 2rem;
         margin: 0 0 0 1rem;
     }
     .nav_link a {
         padding: 0 1rem 0 1rem;
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: 700;
-    }
-    .about_img_wrapper {
-        display: none;
     }
     .content_about{
         padding: 1rem;
     }
+    .about_img_wrapper {
+        width: 20rem;
+        height: 20rem;
+        float: none;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+    .about_img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; 
+    }
     .content_about_header {
-        font-size: 1.2rem;   
+        font-size: 2rem;   
     }
     .content_about_paragraph {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .content_contact {
         margin: .5rem 0 .5rem 0;
     }
+    .contact_wrapper {
+        margin-top: 1rem;
+    }
     .contact_img1 {
-        width: 75%;
-        height: 75%;
+        width: 85%;
+        height: 85%;
         opacity: .5;
     }
     .contact_img2 {
-        width: 75%;
-        height: 75%;
+        width: 85%;
+        height: 85%;
         opacity: .5;
     }
 }
 @media only screen and (max-width: 440px) {
+    .wrapper {
+        margin: 0 .5rem 0 .5rem;
+    }
+    
     .nav_bar {
         justify-content: center;
         flex-wrap: wrap;
     }
     .nav_bar ul {padding: 0;}
-    
+
     .nav_title h3 {
-        font-size: 1rem;
+        font-size: 2rem;
         margin: .5rem 0 0 0;
         text-align: center;
     }
     .nav_title h4 {
         text-align: center;
-        font-size: .9rem;
+        font-size: 1.5rem;
         margin: 0 0 0 0;
     }
     .nav_link a {
         padding: 0 1rem 0 1rem;
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: 700;
     }
     .about_img_wrapper {
-        display: none;
+        width: 20rem;
+        height: 20rem;
+        float: none;
+        text-align: center;
+        margin: 0 auto 0 auto;
     }
     .content_about{
         padding: 1rem;
     }
     .content_about_header {
-        font-size: 1.2rem;   
+        font-size: 2.2rem;   
     }
     .content_about_paragraph {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .content_contact {
         margin: .5rem 0 .5rem 0;
